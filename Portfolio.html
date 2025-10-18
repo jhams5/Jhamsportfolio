@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhommir Bagsic - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jhommir Bagsic</h1>
+        <p>Aspiring IT Professional | 1st-Year BSIT Student at Nueva Ecija University and Science and Technology</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a 1st-year BSIT student at Nueva Ecija University and Science and Technology, passionate about technology and eager to develop skills in software development and cybersecurity. I enjoy problem-solving and am committed to continuous learning in the IT field.</p>
+        <p><strong>Education:</strong> Bachelor of Science in Information Technology (BSIT), Expected Graduation: 2027</p>
+        <p><strong>Relevant Courses:</strong> Introduction to Computing, Programming Fundamentals</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Technical:</strong> Python (Beginner), HTML/CSS (Intermediate), Git</li>
+            <li><strong>Soft:</strong> Problem-Solving, Teamwork, Communication</li>
+            <li><strong>Certifications:</strong> Pursuing Google IT Support</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Simple Calculator App</h3>
+            <p>Built a basic calculator using Python for a programming class.</p>
+            <p><strong>Technologies:</strong> Python</p>
+          
+        </div>
+        <div class="project">
+            <h3>Personal Website</h3>
+            <p>Created a static website about myself using HTML/CSS.</p>
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+           
+        </div>
+    </section> 
+    <style> body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+}</style>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: bagsicjhommir@gmail.com</p>
+        <p>Phone: [09101530613]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jhommir Bagsic. Feel free to reach out for collaborations!</p>
+    </footer>
+
+    <script src="script.js"> document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});</script>
+</body>
+</html>
